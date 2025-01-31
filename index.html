@@ -13,16 +13,22 @@
 </head>
 <body>
   <main>
-    <section>
+    <section class="hero">
       <header>
         <a href="#">
           <img src="images/logo.svg" alt="logo">
         </a>
       </header>
-      <img src="images/hero-mobile.jpg" alt="portrait of a woman">
+      <picture>
+        <source media="(min-width: 430px)" srcset="images/hero-desktop.jpg">
+        <img src="images/hero-mobile.jpg" alt="portrait of a woman">
+      </picture>
     </section>
-    <section>
-      <h2><span>We're</span> coming soon</h2>
+    <section class="content">
+      <h2>
+        <span>We're</span>
+        coming soon
+      </h2>
       <p>
         Hello fellow shoppers! We're currently building our new fashion store. 
         Add your email below to stay up-to-date with announcements and our launch deals.
