@@ -21,23 +21,19 @@ main{
   width: 100%;
 }
 
-.hero{
-  width: 100%;
+header{
+  padding: 26px;
+}
 
-  & header{
-    padding: 26px;
-  }
+picture{
 
-  & picture{
-
-    & img{
-      width: 100%;
-      object-fit: cover;
-    }
+  & img{
+    width: 100%;
+    object-fit: cover;
   }
 }
 
-.content{
+section{
   text-align: center;
   padding: 0 32px;
 
