@@ -66,6 +66,7 @@ section{
     align-items: center;
     justify-content: center;
     position: relative;
+    height: 80px;
 
     & input{
       height: 40px;
@@ -74,6 +75,8 @@ section{
       border-radius: 30px;
       border: 1px solid var(--Desaturated-Red);
       padding: 1.5rem;
+      padding-right: 0;
+      margin-right: 0;
       border-right: none;
       margin: 28px 0;
     }
@@ -83,7 +86,13 @@ section{
       opacity: 0.6;
     }
 
-    & button{
+    & .icon-error{
+      position: absolute;
+      right: 100px;
+      display: none;
+    }
+
+    & .submit-button{
       position: absolute;
       right: 0;
       height: 40px;
@@ -96,7 +105,27 @@ section{
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      transition: all .3s;
     }
+
+    & .submit-button:hover{
+      scale: 1.15;
+    }
+
+    & .visible{
+      display: block;
+    }
+  }
+
+  & .error-message{
+    font-size: 14px;
+    color: var(--Soft-Red);
+    margin-left: 1.5rem;
+    display: none;
+  }
+
+  & .visible{
+    display: block;
   }
 }
 
